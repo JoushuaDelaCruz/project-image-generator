@@ -10,7 +10,7 @@ class ImageGenerator:
     """
     load_dotenv()
     model = "CompVis/stable-diffusion-v1-4"
-    device = "cuda" 
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     token = os.getenv("TOKEN")
 
     def __init__(self):
