@@ -1,0 +1,7 @@
+python-dotenv
+cloudinary
+torch
+diffusers
+django
+django-heroku
+gunicorn
